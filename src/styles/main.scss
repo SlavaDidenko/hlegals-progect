@@ -1,0 +1,33 @@
+// Переменные, миксины, функции
+@import "helpers/variables";
+@import "helpers/mixins";
+@import "helpers/functions";
+
+// CSS-файлы библиотек
+@import "vendor/libs";
+
+// Основное
+@import "base/fonts";
+@import "base/general";
+
+// БЭМ-блоки
+@import "../blocks/modules";
+.container{
+  max-width: 1360px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+.header-bg{
+  background: url("../img/header-bg.jpg")  right  no-repeat;
+  background-size: cover;
+  height: 100vh;
+  min-height: 500px;
+  overflow: hidden;
+
+}
+.experience-services{
+  background: url("../img/bg-heeader_bottom.jpg") no-repeat;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+}
