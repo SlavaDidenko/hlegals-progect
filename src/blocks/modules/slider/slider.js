@@ -1,5 +1,3 @@
-// import Swiper, { Navigation, Pagination } from 'swiper';
-// // });
 if (document.querySelector('.product__slider')) {
     let names = [];
     let slides = document.querySelectorAll('.product__slider .swiper-slide');
@@ -15,13 +13,18 @@ if (document.querySelector('.product__slider')) {
         spaceBetween: 128,
         watchOverflow: true,
         speed: 800,
+        direction: 'vertical',
         // Dotts
         pagination: {
-            el: '.product .pagination',
+            el: '.product__pagination',
             clickable: true,
             renderBullet: function (index, className) {
                 return '<span class="' + className + '">' + (names[index]) + '</span>';
             }
+        },
+        scrollbar: {
+            el: '.swiper-scrollbar',
+            draggable: true
         },
     });
 }

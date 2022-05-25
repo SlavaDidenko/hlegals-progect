@@ -31,3 +31,39 @@
   width: 100%;
   background-size: cover;
 }
+.link{
+  font-size: 14px;
+  line-height: 17px;
+  @extend %tt-regular;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  position: relative;
+  padding-right: 14px;
+  text-decoration: none;
+  &:before{
+    content: '';
+    position: absolute;
+    height: 12px;
+    width: 12px;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background: url("../img/sprites/intermediate-svg/arrow.svg");
+  }
+}
+.title{
+  font-size: 42px;
+  line-height: 50px;
+  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  @extend %tt-bold;
+}
+.text{
+  font-size: 18px;
+  line-height: 26px;
+  color: #FFFFFF;
+  @extend %tt-medium;
+}
