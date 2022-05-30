@@ -1,3 +1,6 @@
+*{
+  box-sizing: border-box;
+}
 // Переменные, миксины, функции
 @import "helpers/variables";
 @import "helpers/mixins";
@@ -17,6 +20,9 @@
   padding: 0 20px;
   margin: 0 auto;
 }
+.main{
+  overflow: hidden;
+}
 .header-bg{
   background: url("../img/header-bg.jpg")  right  no-repeat;
   background-size: cover;
@@ -25,11 +31,35 @@
   overflow: hidden;
 
 }
+.wrapper{
+  padding-bottom: 30px;
+}
 .experience-services{
   background: url("../img/bg-heeader_bottom.jpg") no-repeat;
   height: 100%;
   width: 100%;
   background-size: cover;
+  border-radius: 0 0 12px 12px;
+  position: relative;
+  &:before,&:after{
+    position: absolute;
+    content: '';
+    height: 10px;
+    border-radius: 0px 0px 12px 12px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  &:before{
+    width: calc(100vw - 40px);
+    background: #CACADB;
+    bottom: -10px;
+
+  }
+  &:after{
+    width: calc(100vw - 80px);
+    background: #E7E7F2;
+    bottom: -20px;
+  }
 }
 .link{
   font-size: 14px;
@@ -48,7 +78,7 @@
     right: 0;
     top: 50%;
     transform: translateY(-50%);
-    background: url("../img/sprites/intermediate-svg/arrow.svg");
+    background: url("../img/sprites/arrow.svg");
   }
 }
 .title{

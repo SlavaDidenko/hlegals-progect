@@ -35,15 +35,25 @@
         </div>
         @@include("../blocks/modules/main-page/main-page.html")
     </div>
-    <div class="experience-services ">
-        @@include("../blocks/modules/slider/slider.html")
-        <div class="container">
-        @@include("../blocks/modules/services/services.html")
+    <div class="wrapper">
+        <div class="experience-services ">
+            @@include("../blocks/modules/slider/slider.html")
+            <div class="container">
+                @@include("../blocks/modules/services/services.html")
+            </div>
         </div>
     </div>
+    <div class="container">
+        @@include("../blocks/modules/team-slider/team-slider.html")
+        @@include("../blocks/modules/cases/cases.html")
+    </div>
+    @@include("../blocks/modules/clients/clients.html")
+
+    @@include("../blocks/modules/publications/publications.html")
+    @@include("../blocks/modules/footer/footer.html")
 </div>
-<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 <script src="js/vendor.js"></script>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

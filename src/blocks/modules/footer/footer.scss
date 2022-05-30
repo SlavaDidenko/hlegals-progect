@@ -1,0 +1,121 @@
+.footer {
+  background: #F5F5FA;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0 40px;
+    @media(max-width: 870px) {
+      flex-direction: column;
+      padding: 20px 0 140px;
+    }
+  }
+
+  &__coll {
+  }
+
+  &__top-block {
+    display: flex;
+    align-items: center;
+    @media(max-width: 870px) {
+      flex-direction: column;
+      margin:  0 0 20px 0;
+    }
+  }
+
+  &__location {
+    font-size: 16px;
+    line-height: 19px;
+    color: #323264;
+    @extend %tt-bold;
+    margin-right: 30px;
+    @media(max-width: 870px) {
+      margin:  0 0 10px 0;
+    }
+  }
+
+  &__link {
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #24A3FF;
+    @extend %tt-bold;
+    margin-right: 20px;
+    text-decoration: none;
+    @media(max-width: 870px) {
+      margin: 0;
+    }
+  }
+
+  &__bottom-block {
+    display: flex;
+    align-items: center;
+    @media(max-width: 870px) {
+      flex-direction: column;
+    }
+  }
+
+  &__facebook-icon {
+    margin-right:10px;
+  }
+
+  &__link-email {
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 19px;
+    color: #24A3FF;
+    @extend %tt-bold;
+  }
+
+  &__text-company {
+    font-size: 16px;
+    line-height: 19px;
+    text-align: right;
+    color: #B3B3BA;
+    @extend %tt-regular;
+  }
+}
+
+.footer {
+  &__circle {
+    padding-left: 16px;
+    position: relative;
+    &:before {
+      content: '';
+      position: absolute;
+      height: 6px;
+      width: 6px;
+      border-radius: 50%;
+      background: #E6E6F0;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      @media(max-width: 870px) {
+        display: none;
+      }
+    }
+    @media(max-width: 870px) {
+      padding: 0;
+    }
+  }
+}
+
+.footer-tell {
+  font-size: 16px;
+  line-height: 19px;
+  text-align: right;
+  color: #46466E;
+  @extend %tt-bold;
+  text-decoration: none;
+  margin-right: 10px;
+
+}
+.footer__link-email,.footer-tell,.footer__facebook-icon{
+  @media(max-width: 870px) {
+    margin:  0 0 20px 0;
+  }
+}
+.footer__text-company{
+  text-align: center;
+  margin: 0;
+}
