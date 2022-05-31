@@ -1,0 +1,87 @@
+.clients {
+  &__title {
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #323264;
+    @extend %tt-bold;
+    text-align: center;
+    max-width: 400px;
+    margin:0 auto 30px;
+  }
+
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__logo {
+    max-height: 78%;
+    max-width: 90%;
+  }
+}
+.clients__wrapper{
+  height: 120px;
+  flex: 0 1 33.333%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media (max-width: 768px) {
+  flex: 0 1 50%;
+}
+  @media (max-width: 504px) {
+    height: 90px;
+  }
+}
+.clients {
+
+
+  &__wrapper-hillel {
+    background: #1C4280;
+  }
+
+  &__wrapper-wanna {
+    background: #143646;
+  }
+
+  &__wrapper-tapgerine {
+    background: #F48B30;
+  }
+
+  &__wrapper-look {
+    background: #9E4DC3;
+  }
+
+  &__wrapper-orangear {
+    background: #FD9339;
+  }
+
+  &__wrapper-adtelligent {
+    background: #E2E2E4;
+  }
+
+  &__wrapper-clickky {
+    background: #C71C36;
+  }
+
+  &__wrapper-ecolease {
+    background: #DCF3F9;
+  }
+
+  &__wrapper-infra {
+    background: #EAEAEA;
+  }
+
+  &__wrapper-park {
+    background: #282240;
+  }
+
+  &__wrapper-art-print {
+    background: #1D4568;
+  }
+
+  &__wrapper-ultimate {
+    background: #000000;
+  }
+}

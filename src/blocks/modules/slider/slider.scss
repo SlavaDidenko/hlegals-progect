@@ -5,23 +5,32 @@
     overflow: hidden ;
     max-width: 1210px;
     margin: 0 auto;
-    height: 310px;
     position: relative;
     display: flex;
-    flex-direction: row-reverse;
     justify-content: space-between;
-
     @extend %tt-regular;
+    @media (max-width: 980px) {
+      flex-direction: column-reverse;
+      height: fit-content;
+    }
     &--text{
       font-size: 21px;
       line-height: 30px;
       color: #FFFFFF;
-
+      @media (max-width: 980px) {
+        font-size: 18px;
+        line-height: 26px;
+        margin: 15px 0 20px;
+      }
     }
     &--title{
       font-size: 32px;
       line-height: 38px;
       color: #FFFFFF;
+      @media (max-width: 980px) {
+        font-size: 22px;
+        line-height: 26px;
+      }
     }
   }
 
@@ -29,7 +38,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     font-size: 21px;
     line-height: 30px;
     color: #FFFFFF;
@@ -40,16 +48,21 @@
     flex-direction: column;
     transform: none!important;
     width: 43%;
+    @media (max-width: 980px) {
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
   }
 }
-.swiper-wrapper {
+.swiper-wrapper-slider {
   width: 49.6%;
+  max-height: 312px;
 }
 .swiper-pagination-bullet{
   background: none;
   margin-bottom: 10px!important;
   width: 100%;
-
   height: fit-content;
   font-size: 42px;
   line-height: 50px;
@@ -57,16 +70,31 @@
   text-align: right;
   border-radius: 0;
   @extend %tt-bold;
+  @media (max-width: 980px) {
+    font-size: 0;
+    line-height: 0;
+    height: 16px;
+    width: 16px;
+    background: #24A3FF;
+    opacity: 0.2;
+    border-radius: 50%;
+  }
   &-active{
     background: linear-gradient( #EF8080 0.84%, #F0145A 99.96%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
+    @media (max-width: 980px) {
+      opacity: 1;
+    }
 }
 }
 .swiper-scrollbar{
   background: #E6E6F0;
+   @media (max-width: 980px) {
+     display: none;
+   }
 }
 .swiper-scrollbar-drag{
   width: 4px;
@@ -81,4 +109,20 @@
   height: 300px;
   width: 4px;
   left: 46.6%;
+}
+.product__subtitle{
+  display: none;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 10px;
+  text-fill-color: transparent;
+  @media (max-width: 980px) {
+    display: block;
+  }
 }

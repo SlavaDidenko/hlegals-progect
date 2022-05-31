@@ -14,6 +14,7 @@ if (document.querySelector('.product__slider')) {
         watchOverflow: true,
         speed: 800,
         direction: 'vertical',
+
         // Dotts
         pagination: {
             el: '.product__pagination',
@@ -25,6 +26,15 @@ if (document.querySelector('.product__slider')) {
         scrollbar: {
             el: '.swiper-scrollbar',
             draggable: true
+        },
+        breakpoints: {
+            320: {
+                direction: 'horizontal',
+            },
+            981: {
+                direction: 'vertical',
+            },
+
         },
     });
 }

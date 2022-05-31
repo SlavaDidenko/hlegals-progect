@@ -1,0 +1,120 @@
+.swiper-container {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 12px;
+  position: relative;
+  padding-bottom: 36px;
+  height: fit-content;
+}
+.team {
+  padding: 30px 0 20px;
+}
+.team {
+  &__swiper-slide{
+    background: #F5F5FA;
+    display: flex;
+    border-radius: 12px;
+    overflow: hidden;
+
+  }
+  &__img {
+    @media (max-width: 860px) {
+      display: none;
+    }
+  }
+  &__wrapper-slider {
+    padding: 40px;
+    overflow: hidden;
+    background: #F5F5FA;
+    @media (max-width: 860px) {
+      padding: 20px;
+    }
+  }
+  &__link {
+    color: #24A3FF;
+    margin-bottom: 3px;
+    @extend %tt-bold;
+  }
+  &__title {
+    margin-bottom: 20px;
+    @media (max-width: 1078px) {
+      font-size: 32px;
+      line-height: 37px;
+      margin-bottom: 10px;
+    }
+  }
+  &__text {
+    margin-bottom: 5px;
+    font-size: 18px;
+    line-height: 21px;
+    color: #B3B3BA;
+    @extend %tt-regular;
+    @media (max-width: 860px) {
+      display: none;
+    }
+  }
+  &__comment {
+    font-size: 16px;
+    line-height: 22px;
+    color: #B3B3BA;
+    @extend %tt-regular;
+      @media (max-width: 860px) {
+        display: none;
+      }
+  }
+}
+.link {
+}
+.title {
+}
+.swiper-pagination.swiper-pagination-second{
+  bottom: 0;
+}
+.swiper-pagination-second .swiper-pagination-bullet {
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 12px;
+  background: #24A3FF;
+  opacity: 0.2;
+  margin: 0 7px!important;
+}
+.swiper-pagination-second .swiper-pagination-bullet-active {
+  background: #007aff;
+  opacity: 1;
+}
+.mobile-version{
+  @media (max-width: 860px) {
+    display: flex;
+    align-items: center;
+  }
+}
+.team {
+  &__img-mobile {
+    object-fit: fill;
+    display: none;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+
+    @media (max-width: 860px) {
+      display: block;
+    }
+  }
+
+  &__text-mobile,.team__comment-mobile {
+    margin: 5px 0;
+    display: none;
+    @media (max-width: 860px) {
+      display: block;
+    }
+  }
+  .text-wrapper{
+    padding-left: 10px;
+  }
+  &__comment {
+  }
+}
