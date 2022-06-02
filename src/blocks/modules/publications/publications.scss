@@ -1,14 +1,21 @@
 .publications {
   background: #F5F5FA;
   padding: 40px 0;
+  @media only screen and (max-width: 624px) {
+    padding: 20px 0 40px;
+  }
   &__card-photo{
     padding: 20px;
+  }
+  &__btn{
+    margin: 20px auto  0;
   }
   &__main-title{
     margin-bottom: 40px;
     @media (max-width: 500px) {
       font-size: 32px;
       line-height: 38px;;
+      margin-bottom: 20px;
     }
   }
   &__link{
@@ -29,6 +36,11 @@
     background: #FFFFFF;
     display: inline-block;
     margin: 0 0 40px;
+    @media only screen and (max-width: 624px) {
+      margin: 0 0 20px;
+      width: 100%;
+    }
+
   }
   &__title {
     font-size: 18px;
@@ -48,6 +60,9 @@
     color: #B3B3BA;
     @extend %tt-bold;
     margin: 0 0 20px;
+    @media only screen and (max-width: 624px) {
+      margin: 0;
+    }
   }
 
   &__text {
@@ -57,12 +72,14 @@
     @extend %tt-regular;
     padding-top: 20px;
     border-top: 4px solid #E6E6F0;
+    @media only screen and (max-width: 624px) {
+      display: none;
+    }
   }
   &__img{
     width: 100%;
     display: block
   }
-
 }
 .masonry { /* Masonry container */
   -moz-column-gap: 40px;
@@ -71,10 +88,18 @@
   font-size: 0;
 }
 @media only screen and (max-width: 624px) {
+  .order2{
+    order: 2;
+  }
+  .order3{
+    order: 3;
+  }
   .masonry {
     -moz-column-count: 1;
     -webkit-column-count: 1;
     column-count: 1;
+    display: flex;
+    flex-direction: column;
   }
   .publications__card-wrapper{
     display: none;
@@ -108,5 +133,4 @@
   flex-direction: row-reverse;
   align-items: flex-end;
   justify-content: center;
-
 }

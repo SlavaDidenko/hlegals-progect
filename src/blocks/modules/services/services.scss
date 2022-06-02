@@ -1,5 +1,8 @@
 .services {
   padding: 40px 0 100px;
+  @media (max-width: 710px) {
+    padding: 20px 0;
+  }
   &__link {
     font-size: 14px;
     line-height: 17px;
@@ -9,12 +12,26 @@
     color: #FFFFFF;
     opacity: 0.5;
     margin-bottom: 3px;
+    position: relative;
+    padding-right: 14px;
+    text-decoration: none;
+    &:before{
+      content: '';
+      position: absolute;
+      height: 12px;
+      width: 12px;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      background: url("../img/sprites/arrow2.svg") no-repeat;
+    }
   }
   &__title {
     margin-bottom: 70px;
     @media (max-width: 860px) {
       font-size: 32px;
       line-height: 38px;
+      margin-bottom: 20px;
       }
   }
 
@@ -33,18 +50,18 @@
     }
     @media (max-width: 1070px) {
       flex: 0 1 50%;
-      margin-bottom: 45px;
+      margin-bottom: 45px!important;
       &:nth-last-child(-n+2){
-        margin-bottom: 0;
+        margin: 0!important;
       }
     }
   }
   .services__list .services__wrapper{
     @media (max-width: 710px) {
       flex: 0 1 100%;
-      margin-bottom: 40px;
+      margin-bottom: 40px!important;
       &:last-child{
-        margin-bottom: 0;
+        margin-bottom: 0!important;
       }
     }
   }

@@ -48,18 +48,23 @@
     font-size: 24px;
     line-height: 28px;
     color: #686887;
-    margin: 20px 0;
+    margin: 20px 0 0 ;
     @media (max-width: 990px) {
       font-size: 18px;
       line-height: 21px;
+      margin: 0;
     }
   }
 
   &__subtext {
+    margin: 20px 0 0 ;
     @extend %tt-regular;
     font-size: 18px;
     line-height: 26px;
     color: #B3B3BA;
+    @media (max-width: 990px) {
+      margin: 10px 0 0;
+    }
   }
 }
 .nowrap{

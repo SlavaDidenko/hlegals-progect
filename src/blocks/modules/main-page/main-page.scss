@@ -43,7 +43,7 @@
     z-index: 1;
     height: calc(100vh - 184px);
     @media (max-width: 767px) {
-      height: calc(100vh - 147px);
+      height: calc(100vh - 167px);
     }
     @extend %tt-regular;
   }
@@ -60,6 +60,7 @@
     z-index: 2;
     background: url("../img/sprites/intermediate-svg/scroll.svg") no-repeat center;
     cursor: pointer;
+    scroll-behavior: smooth;
   }
   &:before{
     content: '';

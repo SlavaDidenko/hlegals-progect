@@ -15,14 +15,15 @@
   }
 
   &__logo {
-    img {
+     img {
       @media(max-width: 767px) {
         height: 31px;
-        display: flex; justify-content: space-between;
+        display: flex;
+        justify-content: space-between;
       }
     }
     @media(max-width: 767px) {
-      height: 31px;
+      padding: 10px 0;
       display: flex;
       justify-content: space-between;
     }
@@ -37,10 +38,9 @@
   &__inform {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    padding-bottom: 9px;
     @media(max-width: 767px) {
       justify-content: space-between;
-      margin-bottom: 10px;
 
   }
   }
@@ -206,11 +206,9 @@
     text-align: center;
     color: #FFFFFF;
     max-width: 500px;
-
     z-index: 3;
     flex-grow: 1;
   }
-
 }
 .header__close-btn:after, .header__close-btn:before{
   position: absolute;

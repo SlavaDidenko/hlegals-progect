@@ -79,7 +79,7 @@
     right: 0;
     top: 50%;
     transform: translateY(-50%);
-    background: url("../img/sprites/arrow.svg");
+    background: url("../img/sprites/arrow.svg") no-repeat;
   }
 }
 .title{
@@ -101,7 +101,6 @@
 .more-btn{
   text-decoration: none;
   display: block;
-  margin: 0 auto  ;
   font-size: 14px;
   line-height: 17px;
   text-align: center;

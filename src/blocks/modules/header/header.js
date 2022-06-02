@@ -5,4 +5,14 @@ $(document).ready(function() {
         $(this).addClass('header__lang-active');
 
     });
+
+    $("a.main-section__scroll-btn").click(function() {
+        $("html, body").animate({
+            scrollTop: $($(this).attr("href")).offset().top + "px"
+        }, {
+            duration: 500,
+            easing: "swing"
+        });
+        return false;
+    });
 });
